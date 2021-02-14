@@ -18,7 +18,7 @@ import java.util.concurrent.BlockingQueue;
  *
  *      ArrayBlockingQueue：由数组组成的有界阻塞队列
  *      LinkedBlockingQueue：由链表组成的有界阻塞队列（Integer.MAX_VALUE）
- *      SynchronousQueue：不存储元素的阻塞队列，只能存一个元素
+ *      SynchronousQueue：不存储元素的阻 塞队列，只能存一个元素
  *
  *
  *      BlockQueue的核心方法
