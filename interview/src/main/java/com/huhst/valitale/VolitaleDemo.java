@@ -22,7 +22,7 @@ import java.util.concurrent.TimeUnit;
  *
  *      轻量级的实现，不保证原子性，低配版的synconize
  */
-public class ValitaleDemo {
+public class VolitaleDemo {
     /**
      * 验证volitale的可见效
      * 1.1 假如 int number =0 ;number变量之前根本没有添加volitale关键字，没有可见性
