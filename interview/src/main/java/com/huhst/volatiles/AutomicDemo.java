@@ -1,4 +1,4 @@
-package com.huhst.valitale;
+package com.huhst.volatiles;
 
 
 import java.util.concurrent.atomic.AtomicInteger;
@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @Classname AutomicDemo
  * @Date 2021/3/27 5:45 下午
  *
- * JMM是要求保证原子性的，但是我们的volitale是没有实现原子性
+ * JMM是要求保证原子性的，但是我们的volatile是没有实现原子性
  *
  *
  * 原子性

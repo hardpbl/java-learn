@@ -1,7 +1,0 @@
-
-Z	java:S106-"9Replace this use of System.out or System.err by a logger.(¹®¿¿ÿÿÿÿÿ8ä²˜‡/
-J	java:S1081")Either remove or fill this block of code.(íôğøúÿÿÿÿ8ÍÄ®˜‡/
-Z	java:S1062"9Replace this use of System.out or System.err by a logger.(ü‰Ñİÿÿÿÿÿ8½ˆ¯˜‡/
-Z	java:S106&"9Replace this use of System.out or System.err by a logger.(ĞÓ¸ûùÿÿÿÿ8Ã‹ñ—‡/
-c
-java:S2142)"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8æúª˜‡/

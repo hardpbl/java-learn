@@ -1,4 +1,4 @@
-package com.huhst.valitale;
+package com.huhst.volatiles;
 
 /**
  * @author panbailiang
@@ -20,7 +20,7 @@ package com.huhst.valitale;
  *                 }
  *             }
  *         }
- *         可能在某一次调用因为指令重排存在问题，即还没有初始化就被返回了，因此我们要加上volitale，保证代码顺序的执行
+ *         可能在某一次调用因为指令重排存在问题，即还没有初始化就被返回了，因此我们要加上volatile，保证代码顺序的执行
  *
  */
 public class SingletonDemo {

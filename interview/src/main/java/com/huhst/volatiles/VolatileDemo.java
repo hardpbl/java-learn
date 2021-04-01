@@ -1,10 +1,10 @@
-package com.huhst.valitale;
+package com.huhst.volatiles;
 
 import java.util.concurrent.TimeUnit;
 
 /**
  * @author panbailiang
- * @Classname VolitaleDemo
+ * @Classname VolatileDemo
  * @Date 2021/3/27 5:00 下午
  *
  * 三大特性
@@ -22,11 +22,11 @@ import java.util.concurrent.TimeUnit;
  *
  *      轻量级的实现，不保证原子性，低配版的synconize
  */
-public class VolitaleDemo {
+public class VolatileDemo {
     /**
-     * 验证volitale的可见效
-     * 1.1 假如 int number =0 ;number变量之前根本没有添加volitale关键字，没有可见性
-     * 1.2 添加了volitale后，保证了可见效
+     * 验证volatile的可见效
+     * 1.1 假如 int number =0 ;number变量之前根本没有添加volatile关键字，没有可见性
+     * 1.2 添加了volatile后，保证了可见效
      * 增强主副内存之间的可见效
      *
      *
@@ -47,7 +47,7 @@ public class VolitaleDemo {
         },"AAA").start();
 
         while (myData.number == 0){}
-        System.out.println(Thread.currentThread().getName() + "method over");
+        System.out.println(Thread.currentThread().getName() + "\t"+"method over");
 
 
     }

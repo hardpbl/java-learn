@@ -1,0 +1,10 @@
+
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(ÀŒÓ8Ò¶ñ†ˆ/
+H
+java:S1481-"&Remove this unused "h" local variable.( ¢ Ûùÿÿÿÿ8Òı†ˆ/
+g
+java:S1128"ERemove this unused import 'java.util.concurrent.CopyOnWriteArraySet'.(Üñí¡úÿÿÿÿ8›Ç—„ˆ/
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(¦§¥8Ïíá†ˆ/
+X	java:S125 "<This block of commented-out lines of code should be removed.(¹¤Íò8©Áı…ˆ/
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8›Ç—„ˆ/
