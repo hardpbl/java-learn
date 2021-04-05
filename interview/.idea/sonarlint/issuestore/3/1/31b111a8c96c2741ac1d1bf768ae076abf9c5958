@@ -1,20 +1,20 @@
 
-L
-java:S3740"/Provide the parametrized type for this generic.(…ÈßÑ8¨¶ôÌ‡/
-U	java:S106 "9Replace this use of System.out or System.err by a logger.(ÒıÉÑ8šêÌ‡/
-L
-java:S1481+"*Remove this unused "stamp" local variable.(ÖÚ—„ıÿÿÿÿ8î˜ÒÍ‡/
-Z	java:S1066"9Replace this use of System.out or System.err by a logger.(åË‡Óùÿÿÿÿ8Ğ¢ØÍ‡/
-U	java:S106/"9Replace this use of System.out or System.err by a logger.(®ÖòÊ8éùÿÌ‡/
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ŞÖ£ôùÿÿÿÿ8šéïÌ‡/
-M
-java:S1481."+Remove this unused "stamp2" local variable.(‰úŠãıÿÿÿÿ8ÉÃÒÍ‡/
-U	java:S106,"9Replace this use of System.out or System.err by a logger.(³şÎ”8ÕäøÌ‡/
-c
-java:S2142("FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8éÖáÍ‡/
 U	java:S106>"9Replace this use of System.out or System.err by a logger.(åë½8“®„Í‡/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹ƒŸøÿÿÿÿ8çşîÌ‡/
-c
-java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8âèÌ‡/
+U	java:S106/"9Replace this use of System.out or System.err by a logger.(®ÖòÊ8éùÿÌ‡/
 c
 java:S2142:"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8šéïÌ‡/
+U	java:S106,"9Replace this use of System.out or System.err by a logger.(³şÎ”8ÕäøÌ‡/
+L
+java:S1481+"*Remove this unused "stamp" local variable.(ÖÚ—„ıÿÿÿÿ8î˜ÒÍ‡/
+Z	java:S106#"9Replace this use of System.out or System.err by a logger.(ŞÖ£ôùÿÿÿÿ8šéïÌ‡/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(ÒıÉÑ8šêÌ‡/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹ƒŸøÿÿÿÿ8çşîÌ‡/
+M
+java:S1481."+Remove this unused "stamp2" local variable.(‰úŠãıÿÿÿÿ8ÉÃÒÍ‡/
+c
+java:S2142("FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8éÖáÍ‡/
+c
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8âèÌ‡/
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(åË‡Óùÿÿÿÿ8Ğ¢ØÍ‡/
+L
+java:S3740"/Provide the parametrized type for this generic.(…ÈßÑ8¨¶ôÌ‡/

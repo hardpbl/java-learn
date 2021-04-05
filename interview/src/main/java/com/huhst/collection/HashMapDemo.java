@@ -1,9 +1,11 @@
 package com.huhst.collection;
 
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.Set;
 import java.util.UUID;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
@@ -25,25 +27,14 @@ import java.util.concurrent.CopyOnWriteArraySet;
  *         map.put(null,2);
  *         map.put(null,3);
  *         System.out.println(map.toString());
+ *
+ *
+ *  HashMap的理解
+ *
  */
 
 public class HashMapDemo {
     public static void main(String[] args) {
-//        LinkedHashMap<Object, Object> map = new LinkedHashMap<>();
-//        for (int i = 0; i < 30; i++) {
-//            new Thread(()->{
-//                //写
-//                map.put(UUID.randomUUID().toString(),1);
-//                //读
-//                System.out.println(map);
-//            },String.valueOf(i)).start();
-//        }
-        HashMap<String, Integer> map = new HashMap<>(16);
-        map.put("a",1);
-        System.out.println(map.get("a"));
-
-        int h ;
-        Object key = 10;
-        System.out.println(key.hashCode());
+        HashMap<Object, Object> map = new HashMap<>();
     }
 }

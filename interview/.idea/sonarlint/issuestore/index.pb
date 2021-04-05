@@ -21,3 +21,11 @@ c
 3src/main/java/com/huhst/collection/HashSetDemo.java,f/6/f67dca70bee3e23d70ae2991f0679408f7b69250
 c
 3src/main/java/com/huhst/collection/HashMapDemo.java,7/f/7ffa12cea3e056395cfad4446f2e21390d42fcfa
+d
+4src/main/java/com/huhst/volatiles/SingletonDemo.java,5/8/58a09f972adf8bccb3e34bdff29f18b4b04f7b69
+b
+2src/main/java/com/huhst/volatiles/AutomicDemo.java,5/d/5df4c7aa76ec571137db9df4d0fe53723ae84141
+e
+5src/main/java/com/huhst/volatiles/TagAndSeekDemo.java,f/f/fff6b2e1fd89ebc1fc28159a2a85e2c63f4fd1bf
+c
+3src/main/java/com/huhst/volatiles/VolatileDemo.java,d/d/dd1e701e611bc2427fc2e9b0f52a585458c8ba6f
