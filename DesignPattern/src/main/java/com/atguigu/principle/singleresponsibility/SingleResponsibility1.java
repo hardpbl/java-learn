@@ -1,5 +1,10 @@
 package com.atguigu.principle.singleresponsibility;
 
+/**
+ * 单一职责：
+ * 	即一个类应该只负责一项职责
+ *
+ */
 public class SingleResponsibility1 {
 
 	public static void main(String[] args) {

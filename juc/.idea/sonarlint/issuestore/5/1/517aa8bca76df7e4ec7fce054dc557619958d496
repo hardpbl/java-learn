@@ -1,0 +1,30 @@
+
+C
+java:S1604"(Make this anonymous inner class a lambda(Ç°»Øýÿÿÿÿ
+C
+java:S1604)"(Make this anonymous inner class a lambda(ŒÉù‘øÿÿÿÿ
+C
+java:S16044"(Make this anonymous inner class a lambda(þòÐúýÿÿÿÿ
+C
+java:S1604@"(Make this anonymous inner class a lambda(êƒ‚ªûÿÿÿÿ
+W
+java:S18544"<Remove this useless assignment to local variable "consumer".(þòÐúýÿÿÿÿ
+X
+java:S1854)"=Remove this useless assignment to local variable "predicate".(ŒÉù‘øÿÿÿÿ
+v
+java:S4276"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(Ç°»Øýÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ïÊÉûøÿÿÿÿ
+q
+java:S4276%"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(ÌÊÝý
+M	java:S106&"9Replace this use of System.out or System.err by a logger.(›’¼M
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(¢‹­¯ýÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(Å­ËÝúÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(»ŸˆÜùÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(°è­‡üÿÿÿÿ
+n
+java:S1602I"SRemove useless curly braces around statement and then remove useless return keyword(™üšüüÿÿÿÿ
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(Ë°°¼ýÿÿÿÿ
+I
+java:S1481)".Remove this unused "predicate" local variable.(ŒÉù‘øÿÿÿÿ
+H
+java:S14814"-Remove this unused "consumer" local variable.(þòÐúýÿÿÿÿ

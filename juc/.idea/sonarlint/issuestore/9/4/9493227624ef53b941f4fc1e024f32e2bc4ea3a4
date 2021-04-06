@@ -1,0 +1,15 @@
+
+Z
+java:S1226"?Introduce a new variable instead of reusing the parameter "id".(œÓ„¡úÿÿÿÿ
+\
+java:S1226"AIntroduce a new variable instead of reusing the parameter "name".(´‡‘ÿÿÿÿÿ
+Q
+java:S1854"6Remove this useless assignment to local variable "id".(œÓ„¡úÿÿÿÿ
+S
+java:S1854"8Remove this useless assignment to local variable "name".(´‡‘ÿÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(İŠ–é
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(Ÿúÿ§ıÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(´ú÷¾ûÿÿÿÿ
+;
+java:S21293" Remove this "String" constructor(ïÉ»÷ùÿÿÿÿ
+M	java:S1066"9Replace this use of System.out or System.err by a logger.(·’Åv
