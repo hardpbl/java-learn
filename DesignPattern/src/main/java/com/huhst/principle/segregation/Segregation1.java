@@ -19,6 +19,7 @@ interface Interface1 {
 }
 
 class B implements Interface1 {
+	@Override
 	public void operation1() {
 		System.out.println("B 实现了 operation1");
 	}
@@ -38,6 +39,7 @@ class B implements Interface1 {
 }
 
 class D implements Interface1 {
+	@Override
 	public void operation1() {
 		System.out.println("D 实现了 operation1");
 	}

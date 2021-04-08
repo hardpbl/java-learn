@@ -1,6 +1,8 @@
-package com.huhst.juc.lambda;
+package com.huhust;
 
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,6 +43,8 @@ public class FunctionDemo {
         Function<String, Integer> function1 = String::length;
         System.out.println(function1.apply("ABCD"));
 
+
+        //函数形
         List<Person> personList = new ArrayList<>();
         Person p = new Person();
         p.setSex(true);
@@ -61,6 +65,19 @@ public class FunctionDemo {
         for (Me me : apply) {
             System.out.println("me.toString():" + me.toString());
         }
+
+        //断定型
+        Predicate<Person> result = (ageFlag)-> {
+            if (ageFlag.age > 20){
+                return true;
+            }
+            return false;
+        };
+        Person person = new Person();
+        person.setAge(30);
+        boolean test = result.test(person);
+        System.out.println("test = " + test);
+
 
         Predicate<String> predicate = new Predicate<String>() {
             @Override
@@ -101,11 +118,26 @@ public class FunctionDemo {
         Supplier<String> supplier1 = ()->{return "hello world";};
         System.out.println(supplier1.get());
 
+        Me me = new Me();
 
+        Me me1 = testWay(s -> {
+            Me me2 = new Me();
+            me2.setAge(s.getAge());
+            return me2;
+        }, person, me);
+        System.out.println("me1 = " + me1);
+
+
+
+    }
+
+    public static<T,R> R testWay(Function<T,R> function,T t,R r){
+        return function.apply(t);
     }
 
     @Data
     static
+    @NoArgsConstructor
     class Me {
         private int age;
         private String name;

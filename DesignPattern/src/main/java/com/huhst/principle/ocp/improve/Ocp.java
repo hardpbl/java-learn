@@ -67,9 +67,9 @@ class Triangle extends Shape {
 
 //新增一个图形
 class OtherGraphic extends Shape {
-	OtherGraphic() {
-		super.m_type = 4;
-	}
+//	OtherGraphic() {
+//		super.m_type = 4;
+//	}
 
 	@Override
 	public void draw() {
