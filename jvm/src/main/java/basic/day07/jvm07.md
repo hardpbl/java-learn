@@ -52,4 +52,38 @@ javap -v -p xxx.class
 
 ![img_26.png](img_26.png)
 ![img_27.png](img_27.png)
+![img_28.png](img_28.png)
+![img_29.png](img_29.png)
+
+###对象实例化
+
+![img_30.png](img_30.png)
+![img_31.png](img_31.png)
+####创建对象的方式
+![img_32.png](img_32.png)
+
+创建对象的六个步骤
+![img_33.png](img_33.png)
+![img_34.png](img_34.png)
+
+####对象的内存布局
+![img_35.png](img_35.png)
+![img_36.png](img_36.png)
+
+###对象访问定位
+![img_37.png](img_37.png)
+![img_38.png](img_38.png)
+![img_39.png](img_39.png)
+
+###直接内存
+![img_40.png](img_40.png)
+jdk8 metaspace基于直接内存实现
+![img_41.png](img_41.png)
+使用直接内存的例子
+![img_43.png](img_43.png)
+![img_44.png](img_44.png)
+![img_45.png](img_45.png)
+![img_47.png](img_47.png)
+
+NIO->直接内存
 
