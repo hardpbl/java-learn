@@ -69,7 +69,9 @@ import java.util.concurrent.TimeUnit;
  */
 public class ArrayListDemo {
     public static void main(String[] args) throws InterruptedException {
-        CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
+//        CopyOnWriteArrayList<String> list = new CopyOnWriteArrayList<>();
+        List<String> list = new ArrayList<>();
+
 //        ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
             new Thread(()->{
