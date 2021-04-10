@@ -1,0 +1,24 @@
+
+b
+java:S1192"GDefine a constant instead of duplicating this literal "Okanbi" 5 times.(¯“œ´ùÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "Oduduwa" 5 times.(¯“œ´ùÿÿÿÿ
+d
+java:S1192"IDefine a constant instead of duplicating this literal "Lamurudu" 4 times.(¯“œ´ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(õšÌú
+J
+java:S1611"/Remove the parentheses around the "s" parameter(ıƒœúÿÿÿÿ
+G
+java:S1602",Remove useless curly braces around statement(ıƒœúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Œöœšøÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ùÿııÿÿÿÿ
+M	java:S106)"9Replace this use of System.out or System.err by a logger.(øÛÎF
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(øæÎ
+N	java:S1063"9Replace this use of System.out or System.err by a logger.(ßÒ–
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(øÄ„şÿÿÿÿ
+i
+java:S1602;"SRemove useless curly braces around statement and then remove useless return keyword( ƒ÷˜
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(ÓÉáöıÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(ûøš¨øÿÿÿÿ
+J
+java:S2201F"/The return value of "orElseThrow" must be used.(®åÈÔøÿÿÿÿ

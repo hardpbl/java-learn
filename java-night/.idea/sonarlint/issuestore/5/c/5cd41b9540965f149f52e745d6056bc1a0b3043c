@@ -1,0 +1,43 @@
+
+C
+java:S1604""(Make this anonymous inner class a lambda(Ç°»Øıÿÿÿÿ
+C
+java:S1604R"(Make this anonymous inner class a lambda(ŒÉù‘øÿÿÿÿ
+C
+java:S1604]"(Make this anonymous inner class a lambda(şòĞúıÿÿÿÿ
+C
+java:S1604m"(Make this anonymous inner class a lambda(êƒ‚ªûÿÿÿÿ
+A
+java:S1128"+Remove this unused import 'lombok.Builder'.(§’Ğß
+W
+java:S1854]"<Remove this useless assignment to local variable "consumer".(şòĞúıÿÿÿÿ
+X
+java:S1854R"=Remove this useless assignment to local variable "predicate".(ŒÉù‘øÿÿÿÿ
+v
+java:S4276""[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(Ç°»Øıÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ïÊÉûøÿÿÿÿ
+q
+java:S4276+"[Refactor this code to use the more specialised Functional Interface 'ToIntFunction<String>'(ÌÊİı
+M	java:S106,"9Replace this use of System.out or System.err by a logger.(›’¼M
+E
+java:S16116"/Remove the parentheses around the "t" parameter(‹Œ²£
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(‹æÁõüÿÿÿÿ
+P
+java:S1611F"5Remove the parentheses around the "ageFlag" parameter(¢ÍºÇÿÿÿÿÿ
+\
+java:S1126G"AReplace this if-then-else statement by a single return statement.(­ÃÛùÿÿÿÿ
+S	java:S106O"9Replace this use of System.out or System.err by a logger.(ÍÁùÿÿÿÿ
+S	java:S106["9Replace this use of System.out or System.err by a logger.(¢‹­¯ıÿÿÿÿ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
+S	java:S106f"9Replace this use of System.out or System.err by a logger.(»ŸˆÜùÿÿÿÿ
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(°è­‡üÿÿÿÿ
+n
+java:S1602v"SRemove useless curly braces around statement and then remove useless return keyword(™üšüüÿÿÿÿ
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(Ë°°¼ıÿÿÿÿ
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(§ø©Ëøÿÿÿÿ
+D
+java:S1172†"(Remove this unused method parameter "r".(Å©…Êşÿÿÿÿ
+I
+java:S1481R".Remove this unused "predicate" local variable.(ŒÉù‘øÿÿÿÿ
+H
+java:S1481]"-Remove this unused "consumer" local variable.(şòĞúıÿÿÿÿ

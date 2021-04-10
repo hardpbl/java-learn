@@ -1,0 +1,17 @@
+
+N
+java:S11441",Remove this unused private "getList" method.(Ş¿Êşıÿÿÿÿ8ñÑ»ª‹/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(ŒÔ·ùÿÿÿÿ8òÅ˜«‹/
+N
+java:S1602"",Remove useless curly braces around statement(Æã×¬şÿÿÿÿ8Å³®ª‹/
+N
+java:S1602#",Remove useless curly braces around statement(ˆî¡²ùÿÿÿÿ8äù—«‹/
+X	java:S125"<This block of commented-out lines of code should be removed.(˜Ì•é8ºÂª‹/
+M
+java:S1481"+Remove this unused "meList" local variable.(½ûÍşÿÿÿÿ8ºÂª‹/
+X
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8‹œıª‹/
+W	java:S125$"<This block of commented-out lines of code should be removed.(›ù78ßª—«‹/
+Q
+java:S2201+"/The return value of "orElseThrow" must be used.(ıì…ßşÿÿÿÿ8¨š«‹/
+X	java:S125-"<This block of commented-out lines of code should be removed.(úã†8ñÑ»ª‹/

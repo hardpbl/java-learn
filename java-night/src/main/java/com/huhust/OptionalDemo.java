@@ -3,6 +3,7 @@ package com.huhust;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Optional;
+import java.util.stream.Stream;
 
 /**
  * @author panbailiang
@@ -21,11 +22,21 @@ public class OptionalDemo {
         System.out.println("person2.map(FunctionDemo.Person::getAge) = " + person2.map(FunctionDemo.Person::getAge));
         System.out.println("person2.map(FunctionDemo.Person::getAge) = " + person2.map(FunctionDemo.Person::getAge));
         Thread.currentThread().getName();
-        try {
-            person2.orElseThrow(()->{throw new RuntimeException("空的，哈哈");});
-        }catch (Exception e){
-            e.printStackTrace();
-        }
+
+
+        Stream<String> names = Stream.of("Lamurudu", "Okanbi", "Oduduwa");
+
+        Optional<String> longest = names
+                .filter(name -> name.startsWith("L"))
+                .findFirst();
+
+
+
+        longest.ifPresent(name -> {
+            String s = name.toUpperCase();
+            System.out.println("The longest name is "+ s);
+
+        });
     }
 
 }
