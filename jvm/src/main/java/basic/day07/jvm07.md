@@ -80,7 +80,7 @@ javap -v -p xxx.class
 jdk8 metaspace基于直接内存实现
 ![img_41.png](img_41.png)
 使用直接内存的例子
-![img_43.png](img_43.png)
+![img_43.png](img_43.png)f
 ![img_44.png](img_44.png)
 ![img_45.png](img_45.png)
 ![img_47.png](img_47.png)
