@@ -7,6 +7,9 @@ import java.io.InputStreamReader;
 
 import com.huhst.factory.simplefactory.pizzastore.pizza.Pizza;
 
+/**
+ * @author panbailiang
+ */
 public class OrderPizza {
 
 	// 构造器
@@ -46,16 +49,18 @@ public class OrderPizza {
 	}
 	
 	public void setFactory(SimpleFactory simpleFactory) {
-		String orderType = ""; //用户输入的
-		
-		this.simpleFactory = simpleFactory; //设置简单工厂对象
+		//用户输入的
+		String orderType = "";
+		//设置简单工厂对象
+		this.simpleFactory = simpleFactory;
 		
 		do {
 			orderType = getType(); 
 			pizza = this.simpleFactory.createPizza(orderType);
 			
 			//输出pizza
-			if(pizza != null) { //订购成功
+			//订购成功
+			if(pizza != null) {
 				pizza.prepare();
 				pizza.bake();
 				pizza.cut();
@@ -67,12 +72,12 @@ public class OrderPizza {
 		}while(true);
 	}
 	
-	// 写一个方法，可以获取客户希望订购的披萨种类
+	/** 写一个方法，可以获取客户希望订购的披萨种类*/
 	private String getType() {
 		try {
-			BufferedReader strin = new BufferedReader(new InputStreamReader(System.in));
+			BufferedReader string = new BufferedReader(new InputStreamReader(System.in));
 			System.out.println("input pizza 种类:");
-			String str = strin.readLine();
+			String str = string.readLine();
 			return str;
 		} catch (IOException e) {
 			e.printStackTrace();

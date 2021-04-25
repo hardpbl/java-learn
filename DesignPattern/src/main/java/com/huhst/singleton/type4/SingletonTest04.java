@@ -1,6 +1,9 @@
 package com.huhst.singleton.type4;
 
 
+/**
+ * @author panbailiang
+ */
 public class SingletonTest04 {
 
 	public static void main(String[] args) {

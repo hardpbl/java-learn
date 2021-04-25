@@ -1,10 +1,14 @@
 package com.huhst.factory.simplefactory.pizzastore.pizza;
 
-//将Pizza 类做成抽象
+/**
+ * //将Pizza 类做成抽象
+ * @author panbailiang
+ */
 public abstract class Pizza {
-	protected String name; //名字
+	/**名字*/
+	protected String name;
 
-	//准备原材料, 不同的披萨不一样，因此，我们做成抽象方法
+	/**准备原材料, 不同的披萨不一样，因此，我们做成抽象方法*/
 	public abstract void prepare();
 
 	
@@ -16,7 +20,7 @@ public abstract class Pizza {
 		System.out.println(name + " cutting;");
 	}
 
-	//打包
+	/**打包*/
 	public void box() {
 		System.out.println(name + " boxing;");
 	}

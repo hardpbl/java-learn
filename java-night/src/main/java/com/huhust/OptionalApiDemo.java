@@ -53,12 +53,14 @@ public class OptionalApiDemo {
 
         System.out.println("================使用orElseGet==================");
         Stream<String> orElseGet = Stream.of("Lamurudu", "Okanbi", "Oduduwa");
-        Optional<String> orElseGetLongest = orElseGet
+         orElseGet
                 .filter(name -> name.startsWith("Q"))
-                .findFirst();
-        String orElseGetResult = orElseGetLongest.orElseGet(() -> {
+                .findFirst().orElseGet(() -> {
             return "Hello lambda";
         });
+//        String orElseGetResult = orElseGetLongest.orElseGet(() -> {
+//            return "Hello lambda";
+//        });
         System.out.println(orElseGetResult);
 
 

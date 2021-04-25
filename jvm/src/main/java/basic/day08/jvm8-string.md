@@ -32,3 +32,4 @@ StringTable的结构：hashTable 数组+链表
 字符串变量相加是通过StringBuilder来实现的
 ![img_42.png](img_42.png)
 
+

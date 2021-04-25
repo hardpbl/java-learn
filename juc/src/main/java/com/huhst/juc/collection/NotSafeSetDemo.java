@@ -21,12 +21,11 @@ import java.util.concurrent.CopyOnWriteArraySet;
  * HashSet,HashMap是无序无重复，
  * ConcurrentHashMap
  *
- * 数组+链表+红黑书
+ * 数组+链表+红黑sd
  * new HashMap()  => 默认 16 负载0.75
  * 数组里面存的是node节点
  * 高位运算后，equals key相等，则覆盖，不相等且hash冲突则变成单项链表
  * 直到8的时候就会变成红黑树
-
  *
  *
  *
