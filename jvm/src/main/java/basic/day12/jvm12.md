@@ -56,10 +56,55 @@
 ![img_34.png](img_34.png)
 
 ###Parallel回收器：吞吐量优先(新生代)
+6大参数
 ![img_35.png](img_35.png)
 ![img_36.png](img_36.png)
 ![img_38.png](img_38.png)
+![img_39.png](img_39.png)
+![img_40.png](img_40.png)
 
+###CMS-低延迟
+![img_41.png](img_41.png)
+![img_42.png](img_42.png)
+![img_43.png](img_43.png)
+![img_44.png](img_44.png)
+![img_45.png](img_45.png)
+![img_46.png](img_46.png)
+
+###G1区域分代化
+![img_47.png](img_47.png)
+![img_48.png](img_48.png)   
+![img_49.png](img_49.png)
+![img_50.png](img_50.png)
+![img_51.png](img_51.png)
+![img_52.png](img_52.png)
+![img_53.png](img_53.png)
+
+####G1 region
+![img_56.png](img_56.png)
+![img_54.png](img_54.png)
+![img_55.png](img_55.png)
+![img_57.png](img_57.png)
+####G1回收过程
+![img_59.png](img_59.png)
+![img_58.png](img_58.png)
+
+![img_60.png](img_60.png)
+记忆集的作用
+![img_61.png](img_61.png) 
+
+yongGC
+![img_62.png](img_62.png)
+![img_63.png](img_63.png)
+![img_64.png](img_64.png)
+![img_65.png](img_65.png)
+
+![img_66.png](img_66.png)
+![img_67.png](img_67.png)
+![img_68.png](img_68.png)
+![img_69.png](img_69.png)
+
+![img_70.png](img_70.png)
 
 
 
