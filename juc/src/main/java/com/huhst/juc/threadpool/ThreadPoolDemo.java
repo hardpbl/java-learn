@@ -78,30 +78,30 @@ import java.util.concurrent.TimeUnit;
  * 线程池用哪一个，如何设置线程池参数
  * <p>
  * 线程池中的拒绝策略
- *      什么时候起作用：
- *          等待队列排满了，再也塞不下新的任务了，同时线程池重的max线程数也达到了最大，无法继续为新任务服务
- *          这个时候我们就需要拒绝策略机制合理的处理这个问题
- *
- *          AbortPolicy(默认)：直接抛出RejectedExecutionException异常，阻止系统正常运行
- *          CallerRunPolicy："调用者运行"-一种调节机制，该策略既不会抛弃任务，也不会抛出异常，而是将某些任务回退
- *                          到调用者，从而降低新任务的流量 //回退机制，谁让你找我的你找谁
- *          DiscardPolicy：抛弃处理不掉的,该策略默默的丢弃无法处理的任务，不予任何处理也不抛出异常，
- *                         如果允许任务丢失，这是最好的一种策略
- *          DiscardOldestPolicy: 抛弃队列中等待最久的任务，然后把当前任务加入到队列中尝试再次提交当前任务
- *
+ * 什么时候起作用：
+ * 等待队列排满了，再也塞不下新的任务了，同时线程池重的max线程数也达到了最大，无法继续为新任务服务
+ * 这个时候我们就需要拒绝策略机制合理的处理这个问题
+ * <p>
+ * AbortPolicy(默认)：直接抛出RejectedExecutionException异常，阻止系统正常运行
+ * CallerRunPolicy："调用者运行"-一种调节机制，该策略既不会抛弃任务，也不会抛出异常，而是将某些任务回退
+ * 到调用者，从而降低新任务的流量 //回退机制，谁让你找我的你找谁
+ * DiscardPolicy：抛弃处理不掉的,该策略默默的丢弃无法处理的任务，不予任何处理也不抛出异常，
+ * 如果允许任务丢失，这是最好的一种策略
+ * DiscardOldestPolicy: 抛弃队列中等待最久的任务，然后把当前任务加入到队列中尝试再次提交当前任务
+ * <p>
  * ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(2, 5, 2,
- *                 TimeUnit.SECONDS, new LinkedBlockingQueue<>(3), Executors.defaultThreadFactory(),
- *                 new ThreadPoolExecutor.DiscardOldestPolicy());
- *         for (int i = 1; i <= 10; i++) {
- *             threadPoolExecutor .execute(() -> {
- *                 System.out.println(Thread.currentThread().getName() + "\t" + "办理业务");
- *             });
- *         }
- *
- *
- *          线程数的配置：
- *          cpu密集型：最大核心数=逻辑处理核心数+1
- *          IO密集型：cpu核心数
+ * TimeUnit.SECONDS, new LinkedBlockingQueue<>(3), Executors.defaultThreadFactory(),
+ * new ThreadPoolExecutor.DiscardOldestPolicy());
+ * for (int i = 1; i <= 10; i++) {
+ * threadPoolExecutor .execute(() -> {
+ * System.out.println(Thread.currentThread().getName() + "\t" + "办理业务");
+ * });
+ * }
+ * <p>
+ * <p>
+ * 线程数的配置：
+ * cpu密集型：最大核心数=逻辑处理核心数+1
+ * IO密集型：cpu核心数
  *
  *
  *

@@ -4,30 +4,28 @@ package com.huhst.juc.transfervalue;
  * @author panbailiang
  * @Classname TransferValue
  * @Date 2021/2/14 3:19 下午
- *
+ * <p>
  * 传值还是传引用
- *
+ * <p>
  * 方法的作用域
- *
+ * <p>
  * id :10
  * person.getName()XXX
  * str: xyz
- *
- *
- *
- *
- *
  */
 public class TransferValue {
-    public void changeValue1(int id){
+    public void changeValue1(int id) {
         id = 30;
     }
-    public void changeValue2(Person person){
+
+    public void changeValue2(Person person) {
         person.setName("XXX");
     }
-    public void changeValue3(String name){
+
+    public void changeValue3(String name) {
         name = "xxx";
     }
+
     public static void main(String[] args) {
         TransferValue transferValue = new TransferValue();
         int id = 10;

@@ -7,7 +7,7 @@ import java.util.concurrent.CyclicBarrier;
  * @author panbailiang
  * @Classname CyclicBarrierDemo
  * @Date 2021/2/12 11:20 下午
- *
+ * <p>
  * 人齐了再干活
  */
 public class CyclicBarrierDemo {
@@ -16,10 +16,10 @@ public class CyclicBarrierDemo {
             System.out.println("七颗收集完毕...开始召唤神龙>>>>神龙出现");
         });
 
-        for (int i = 1; i <= 7 ; i++) {
+        for (int i = 1; i <= 7; i++) {
             int finalI = i;
-            new Thread(()->{
-                System.out.println("收集到的第" + finalI +"颗龙珠");
+            new Thread(() -> {
+                System.out.println("收集到的第" + finalI + "颗龙珠");
                 try {
                     barrier.await();
                 } catch (InterruptedException e) {
@@ -27,7 +27,7 @@ public class CyclicBarrierDemo {
                 } catch (BrokenBarrierException e) {
                     e.printStackTrace();
                 }
-            },String.valueOf(i)).start();
+            }, String.valueOf(i)).start();
         }
 
     }

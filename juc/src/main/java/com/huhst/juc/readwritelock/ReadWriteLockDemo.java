@@ -10,41 +10,41 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @author panbailiang
  * @Classname ReadWriteLockDemo
  * @Date 2021/2/12 11:38 下午
- *
+ * <p>
  * 读写锁
- *
+ * <p>
  * 读应该是共享的，写应该是独立的
- *
  */
 public class ReadWriteLockDemo {
     public static void main(String[] args) {
         MyCache myCache = new MyCache();
         for (int i = 0; i < 5; i++) {
             int finalI = i;
-            new Thread(()->{
+            new Thread(() -> {
                 try {
-                    myCache.put(finalI +"", finalI +"");
+                    myCache.put(finalI + "", finalI + "");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            },String.valueOf(i)).start();
+            }, String.valueOf(i)).start();
         }
         for (int i = 0; i < 5; i++) {
             int finalI = i;
-            new Thread(()->{
+            new Thread(() -> {
                 try {
-                    myCache.get(finalI +"");
+                    myCache.get(finalI + "");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            },String.valueOf(i)).start();
+            }, String.valueOf(i)).start();
         }
     }
 }
 
-class MyCache{
-    private volatile Map<String, Object> map =new HashMap<>();
+class MyCache {
+    private volatile Map<String, Object> map = new HashMap<>();
     private ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
+
     public void put(String key, Object value) throws InterruptedException {
         readWriteLock.writeLock().lock();
         try {
@@ -52,11 +52,12 @@ class MyCache{
             TimeUnit.SECONDS.sleep(3);
             map.put(key, value);
             System.out.println(Thread.currentThread().getName() + "\t" + "写入数据完成" + value);
-        }finally {
+        } finally {
             readWriteLock.writeLock().unlock();
         }
 
     }
+
     public void get(String key) throws InterruptedException {
         readWriteLock.readLock().lock();
         try {
@@ -64,7 +65,7 @@ class MyCache{
             TimeUnit.SECONDS.sleep(3);
             Object obj = map.get(key);
             System.out.println(Thread.currentThread().getName() + "\t" + "读取数据完成 ：" + obj);
-        }finally {
+        } finally {
             readWriteLock.readLock().unlock();
         }
 

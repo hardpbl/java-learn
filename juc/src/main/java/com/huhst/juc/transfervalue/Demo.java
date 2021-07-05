@@ -12,18 +12,20 @@ import java.util.List;
 public class Demo {
     private String name;
     private Integer age;
-    public Demo(String name, Integer age){
+
+    public Demo(String name, Integer age) {
         System.out.println("正常结构");
         this.name = name;
         this.age = age;
     }
-    public Demo(String name, Object... objects){
+
+    public Demo(String name, Object... objects) {
         System.out.println("可变参数");
         this.name = name;
         this.age = (Integer) objects[0];
     }
 
     public static void main(String[] args) {
-        Demo demo = new Demo("张三",10,11);
+        Demo demo = new Demo("张三", 10, 11);
     }
 }

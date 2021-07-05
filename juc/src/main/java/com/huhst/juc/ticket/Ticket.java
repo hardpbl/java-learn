@@ -18,7 +18,7 @@ public class Ticket {
 
     public synchronized void saleTicket() {
         if (number > 0) {
-            System.out.println(Thread.currentThread().getName() + "\t卖出第" + number-- +"还剩"+number);
+            System.out.println(Thread.currentThread().getName() + "\t卖出第" + number-- + "还剩" + number);
         }
     }
 }
@@ -33,7 +33,7 @@ class SaleTicket {
                     ticket.saleTicket();
                 }
             }
-        },"A");
+        }, "A");
         t1.start();
 
         Thread t2 = new Thread(new Runnable() {
@@ -43,7 +43,7 @@ class SaleTicket {
                     ticket.saleTicket();
                 }
             }
-        },"B");
+        }, "B");
         t2.start();
 
         Thread t3 = new Thread(new Runnable() {
@@ -53,7 +53,7 @@ class SaleTicket {
                     ticket.saleTicket();
                 }
             }
-        },"C");
+        }, "C");
         t3.start();
     }
 }

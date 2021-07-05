@@ -17,6 +17,6 @@ public class Demo {
         long end = System.currentTimeMillis();
         System.out.println("start = " + start);
         System.out.println("end = " + end);
-        System.out.println((end-start));
+        System.out.println((end - start));
     }
 }

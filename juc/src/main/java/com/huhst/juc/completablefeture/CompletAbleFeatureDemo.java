@@ -64,6 +64,7 @@ public class CompletAbleFeatureDemo {
 //        System.out.println(completableFuture.get());
 
         CompletableFuture<Integer> feture01 = null;
+
 //                CompletableFuture.supplyAsync(() -> {
 //            System.out.println(Thread.currentThread().getName() + "进来了");
 //            System.out.println("");
@@ -85,6 +86,7 @@ public class CompletAbleFeatureDemo {
             System.out.println(Thread.currentThread().getName());
             return "world";
         }, executorService);
+
         //feture01和feture02任意一个任务执行完成，执行第三个任务
 //        feture01.runAfterEitherAsync(feture02,()->{
 //            System.out.println(Thread.currentThread().getName());
@@ -94,7 +96,6 @@ public class CompletAbleFeatureDemo {
         CompletableFuture<Void> voidCompletableFuture = CompletableFuture.allOf(feture01, feture02, feture03);
         voidCompletableFuture.get();
         System.out.println("feture全部执行完成：开始执行主线程" + Thread.currentThread().getName());
-
 
 
     }

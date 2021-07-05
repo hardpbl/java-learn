@@ -9,14 +9,13 @@ package com.huhst.juc.notify;
  * <p>
  * 线程操作资源类
  * 判断/干活/通知
- *
+ * <p>
  * 多线程交互中，必须要防止线程的虚假唤醒，也即(判断只用while，不用if)
- *
+ * <p>
  * wait是指在一个已经进入了同步锁的线程内，让自己暂时让出同步锁，以便其他正在等待此锁的线程可以得到同步锁并运行，
  * 只有其他线程调用了notify方法（notify并不释放锁，只是告诉调用过wait方法的线程可以去参与获得锁的竞争了，
  * 但不是马上得到锁，因为锁还在别人手里，别人还没释放），调用wait方法的一个或多个线程就会解除wait状态，
  * 重新参与竞争对象锁，程序如果可以再次得到锁，就可以继续向下运行。
- *
  */
 
 class AirConditioner {
@@ -31,19 +30,19 @@ class AirConditioner {
         }
         //干活
         number++;
-        System.out.println(Thread.currentThread().getName()+"生产了：" + "\t" + number);
+        System.out.println(Thread.currentThread().getName() + "生产了：" + "\t" + number);
         //通知
         this.notifyAll();
     }
 
     public synchronized void subTemperature() throws InterruptedException {
         //判断
-        while (number == 0){
+        while (number == 0) {
             this.wait();
         }
         //干活
         number--;
-        System.out.println(Thread.currentThread().getName()+"消费了：" + "\t" + number);
+        System.out.println(Thread.currentThread().getName() + "消费了：" + "\t" + number);
         //通知
         this.notifyAll();
     }
@@ -65,7 +64,7 @@ class AirConditioner {
 public class ThreadWaitNotifyDemo {
     public static void main(String[] args) {
         AirConditioner airConditioner = new AirConditioner();
-        new Thread(()->{
+        new Thread(() -> {
             try {
                 for (int i = 0; i < 10; i++) {
                     airConditioner.addTemperature();
@@ -73,9 +72,9 @@ public class ThreadWaitNotifyDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"A").start();
+        }, "A").start();
 
-        new Thread(()->{
+        new Thread(() -> {
             try {
                 for (int i = 0; i < 10; i++) {
                     airConditioner.subTemperature();
@@ -83,9 +82,9 @@ public class ThreadWaitNotifyDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"B").start();
+        }, "B").start();
         //四个线程
-        new Thread(()->{
+        new Thread(() -> {
             try {
                 for (int i = 0; i < 10; i++) {
                     airConditioner.addTemperature();
@@ -93,9 +92,9 @@ public class ThreadWaitNotifyDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"C").start();
+        }, "C").start();
 
-        new Thread(()->{
+        new Thread(() -> {
             try {
                 for (int i = 0; i < 10; i++) {
                     airConditioner.subTemperature();
@@ -103,6 +102,6 @@ public class ThreadWaitNotifyDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        },"D").start();
+        }, "D").start();
     }
 }

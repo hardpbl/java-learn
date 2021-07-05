@@ -13,19 +13,15 @@ import java.util.function.Supplier;
  * @author panbailiang
  * @Classname StreamDemo
  * @Date 2021/2/14 11:17 下午
- *
+ * <p>
  * 四大默认函数式接口：
- *  Function(函数型接口): 传入一个T类型，返回一个R类型
- *      @FunctionalInterface
- *      public interface Function<T, R>
- *  Predicate(断定型接口):判定类型为T的对象是否满足某约束，并返回boolean值
- *
- *  Consumer(消费型接口) 对参数类型为T类型参数进行操作
- *
- *  Supplier(供给型接口) 参数:无 返回类型为T类型的对象
- *
- *
- *
+ * Function(函数型接口): 传入一个T类型，返回一个R类型
+ * @FunctionalInterface public interface Function<T, R>
+ * Predicate(断定型接口):判定类型为T的对象是否满足某约束，并返回boolean值
+ * <p>
+ * Consumer(消费型接口) 对参数类型为T类型参数进行操作
+ * <p>
+ * Supplier(供给型接口) 参数:无 返回类型为T类型的对象
  */
 public class FunctionDemo {
     public static void main(String[] args) {
@@ -47,7 +43,7 @@ public class FunctionDemo {
         p.setAge(20);
         p.setName("pbl");
         personList.add(p);
-        Function<List<Person>, List<Me>> function2 =  (t)->{
+        Function<List<Person>, List<Me>> function2 = (t) -> {
             List<Me> functionList = new ArrayList<>();
             for (Person person : t) {
                 Me me = new Me();
@@ -82,10 +78,8 @@ public class FunctionDemo {
 
 
         //消费型改写
-        Consumer<String> consumer1 =s -> System.out.println(s.length());
+        Consumer<String> consumer1 = s -> System.out.println(s.length());
         consumer1.accept("ANCDAS");
-
-
 
 
         //供给型
@@ -98,7 +92,9 @@ public class FunctionDemo {
         System.out.println(supplier.get());
 
         //改写
-        Supplier<String> supplier1 = ()->{return "hello world";};
+        Supplier<String> supplier1 = () -> {
+            return "hello world";
+        };
         System.out.println(supplier1.get());
 
 

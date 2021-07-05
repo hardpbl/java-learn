@@ -7,17 +7,17 @@ import java.util.concurrent.TimeUnit;
  * @author panbailiang
  * @Classname SemaporeDemo
  * @Date 2021/2/12 11:28 下午
- *
+ * <p>
  * 信号量
- *
+ * <p>
  * 信号量主要是
  */
 public class SemaphoreDemo {
     public static void main(String[] args) {
         //资源是1个的时候可以用来当成sync来使用
         Semaphore semaphore = new Semaphore(3);
-        for (int i = 1; i <= 7 ; i++) {
-            new Thread(()->{
+        for (int i = 1; i <= 7; i++) {
+            new Thread(() -> {
                 try {
                     semaphore.acquire();
                     System.out.println(Thread.currentThread().getName() + "\t" + "抢占到了车位");
@@ -27,10 +27,10 @@ public class SemaphoreDemo {
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-                }finally {
+                } finally {
                     semaphore.release();
                 }
-            },String.valueOf(i)).start();
+            }, String.valueOf(i)).start();
         }
     }
 }
